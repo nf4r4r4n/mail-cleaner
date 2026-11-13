@@ -46,7 +46,7 @@ Mail Cleaner est un outil web local (Node.js + React) qui scanne votre boîte Gm
 ## Installation
 
 ```bash
-git clone https://github.com/<votre-user>/mail-cleaner.git
+git clone https://github.com/nf4r4r4n/mail-cleaner.git
 cd mail-cleaner
 npm install
 cp .env.example .env
