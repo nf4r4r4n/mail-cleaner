@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  html { font-family: "Roboto", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  html { font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  * { border-radius: 0 !important; }
   :root { color-scheme: light; }
   .dark { color-scheme: dark; }
 }
