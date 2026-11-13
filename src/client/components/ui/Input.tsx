@@ -7,9 +7,9 @@ export const Input = forwardRef<HTMLInputElement, React.InputHTMLAttributes<HTML
       <input
         ref={ref}
         className={cn(
-          "h-12 w-full rounded-md border border-gray-300 dark:border-gray-600 bg-transparent px-4 text-sm",
+          "h-10 w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 text-sm",
           "placeholder:text-gray-400 dark:placeholder:text-gray-500",
-          "focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary",
+          "focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent",
           "disabled:opacity-50",
           className
         )}
@@ -27,8 +27,8 @@ export const Checkbox = forwardRef<HTMLInputElement, React.InputHTMLAttributes<H
         ref={ref}
         type="checkbox"
         className={cn(
-          "h-5 w-5 rounded-sm border-2 border-gray-400 dark:border-gray-500 bg-transparent",
-          "accent-primary focus:ring-2 focus:ring-primary focus:ring-offset-0",
+          "h-4 w-4 border border-gray-400 dark:border-gray-600 bg-white dark:bg-gray-900",
+          "accent-accent focus:ring-2 focus:ring-accent focus:ring-offset-0",
           "disabled:opacity-50",
           className
         )}

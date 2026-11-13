@@ -11,14 +11,15 @@ const ITEMS: { key: keyof Stats; label: string }[] = [
 
 export function StatsGrid({ stats }: { stats: Stats | undefined }) {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-      {ITEMS.map((it) => (
-        <Card key={it.key}>
-          <CardBody className="py-4">
-            <div className="text-3xl font-medium text-primary">{stats ? stats[it.key] : "—"}</div>
-            <div className="mt-1 text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">{it.label}</div>
-          </CardBody>
-        </Card>
+    <div className="grid grid-cols-2 md:grid-cols-5 gap-0 border border-gray-200 dark:border-gray-800">
+      {ITEMS.map((it, i) => (
+        <div
+          key={it.key}
+          className={`px-6 py-5 bg-white dark:bg-gray-950 ${i > 0 ? "border-l border-gray-200 dark:border-gray-800" : ""}`}
+        >
+          <div className="text-3xl font-bold tracking-tight">{stats ? stats[it.key] : "—"}</div>
+          <div className="mt-1 text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">{it.label}</div>
+        </div>
       ))}
     </div>
   );

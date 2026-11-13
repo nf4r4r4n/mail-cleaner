@@ -28,7 +28,7 @@ export function CandidateList({
   }
   const allSelected = items.length > 0 && items.every((c) => selected.has(c.id));
   return (
-    <div className="rounded-lg bg-white dark:bg-gray-900 shadow-elev-1 overflow-hidden">
+    <div className="border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
       <div className="flex items-center justify-between px-6 py-3 border-b border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
         <div className="flex items-center gap-3">
           <button

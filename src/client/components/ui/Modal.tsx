@@ -25,18 +25,18 @@ export function Modal({ open, onClose, title, children, width = "max-w-lg" }: Mo
 
   if (!open) return null;
   return createPortal(
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center">
       <div className="absolute inset-0 bg-black/50" onClick={onClose} />
-      <div className={cn("relative w-full rounded-xl bg-white dark:bg-gray-900 shadow-elev-4", width)}>
+      <div className={cn("relative w-full mx-4 bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800", width)}>
         {title && (
-          <div className="flex items-center justify-between px-6 py-4">
-            <h2 className="text-lg font-medium">{title}</h2>
-            <button onClick={onClose} className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 rounded-full p-1 hover:bg-gray-100 dark:hover:bg-gray-800">
+          <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200 dark:border-gray-800">
+            <h2 className="text-base font-semibold uppercase tracking-wide">{title}</h2>
+            <button onClick={onClose} className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-100">
               <X className="h-5 w-5" />
             </button>
           </div>
         )}
-        <div className="px-6 pb-6 max-h-[80vh] overflow-auto">{children}</div>
+        <div className="px-6 py-4 max-h-[80vh] overflow-auto">{children}</div>
       </div>
     </div>,
     document.body
