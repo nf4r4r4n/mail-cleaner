@@ -22,7 +22,7 @@ export function ActionBar({
           <Button variant="ghost" size="sm" onClick={onClear} disabled={busy}>
             <X className="h-4 w-4" /> Tout retirer
           </Button>
-          <Button variant="outlined" size="sm" onClick={onArchive} disabled={busy}>
+          <Button variant="secondary" size="sm" onClick={onArchive} disabled={busy}>
             <Archive className="h-4 w-4" /> Archiver
           </Button>
           <Button variant="danger" size="sm" onClick={onTrash} disabled={busy}>
