@@ -84,13 +84,13 @@ Puis ouvrez http://localhost:3000.
 
 ## Configuration
 
-| Variable | Défaut | Description |
-|---|---|---|
-| `MIN_SCORE` | `4` | Score minimum pour qu'un mail soit candidat |
-| `STALE_DAYS` | `90` | Âge (jours) au-delà duquel une notification est « périmée » |
-| `PORT` | `3000` | Port du serveur |
-| `HOST` | `127.0.0.1` | Hôte du serveur |
-| `DATA_DIR` | `./data` | Dossier des données (SQLite, tokens, config) |
+| Variable     | Défaut      | Description                                                 |
+| ------------ | ----------- | ----------------------------------------------------------- |
+| `MIN_SCORE`  | `4`         | Score minimum pour qu'un mail soit candidat                 |
+| `STALE_DAYS` | `90`        | Âge (jours) au-delà duquel une notification est « périmée » |
+| `PORT`       | `3000`      | Port du serveur                                             |
+| `HOST`       | `127.0.0.1` | Hôte du serveur                                             |
+| `DATA_DIR`   | `./data`    | Dossier des données (SQLite, tokens, config)                |
 
 Ajustements fins dans `data/` :
 
@@ -147,7 +147,3 @@ Merci de respecter le style de code existant (TypeScript strict, Tailwind, compo
 ## Licence
 
 [MIT](LICENSE)
-```
-
-Let me also add LICENSE file (MIT). And commit README + LICENSE.<|end|><|start|>start to=assistant<|channel|>analysis <|constrain|>xml<|message|><rfl:parameter name="path">
-/home/nfararan/Documents/mail-cleaner/LICENSE
